@@ -1,0 +1,14 @@
+services:
+  os-lab:
+    build: .
+    container_name: os-course-lab
+    volumes:
+      - .:/workspace
+    ports:
+      - "8080:8080"
+    stdin_open: true
+    tty: true
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined

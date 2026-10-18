@@ -1,0 +1,32 @@
+name: Build and Verify OS Labs
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential gcc make
+
+    - name: Compile All Labs
+      run: |
+        make all
+
+    - name: Run Lab Benchmarks & Validations
+      run: |
+        make test
+
+    - name: Clean Build Artifacts
+      run: |
+        make clean

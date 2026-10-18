@@ -1,0 +1,2 @@
+to compile with assembly use this
+gcc -S stack.c  -o output.s

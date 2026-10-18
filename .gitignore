@@ -1,0 +1,50 @@
+# Operating System Artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+__MACOSX/
+
+# Compiled Binaries & Object Files
+*.o
+*.obj
+*.exe
+*.out
+a.out
+
+# macOS Debug Information Files
+*.dSYM/
+
+# Windows Debug Files
+*.pdb
+*.ilk
+
+# Lab specific compiled executables
+labs/01-process-anatomy/simple
+labs/01-process-anatomy/test
+labs/02-stack-memory/stack
+labs/03-data-segment/global
+labs/04-heap-allocation/simpleheap
+labs/05-allocation-benchmarks/alloc1
+labs/05-allocation-benchmarks/alloc2
+labs/06-process-fork-cow/nofork
+labs/06-process-fork-cow/p
+labs/06-process-fork-cow/cow
+labs/07-socket-webserver/cwebserver
+labs/07-socket-webserver/cwebserver-slow-connection
+labs/07-socket-webserver/cwebserver-slow-download
+labs/07-socket-webserver/cwebserver-slow-processing
+labs/07-socket-webserver/cwebserver-zero-tcp-window
+labs/08-cpu-cache-locality/cache_locality
+labs/09-storage-page-cache/page_cache_sync
+
+# Generated Temporary Files
+*.tmp
+*.swp
+*~
+.vscode/
+.idea/
