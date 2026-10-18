@@ -110,7 +110,7 @@ Requires [Docker Desktop](https://www.docker.com/products/docker-desktop/):
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/fundamentals-of-operating-systems-labs.git
+git clone https://github.com/Sohila-Khaled-Abbas/fundamentals-of-operating-systems-labs.git
 cd fundamentals-of-operating-systems-labs
 
 # Start and enter the fully equipped Linux environment
